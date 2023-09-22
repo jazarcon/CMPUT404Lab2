@@ -12,9 +12,9 @@ def get(host, port):
     while(len(result)>0):
         print(result)
         result = s.recv(BYTES_TO_READ)
+    
     s.close()
-    return result
 
-
+#get("www.google.com", 80)
+#print(get("www.google.com", 80))
 print(get("localhost", 8080))
-
